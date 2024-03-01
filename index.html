@@ -360,6 +360,19 @@
 	</div>
 
 	<!-- Javascript files -->
+	<script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "566bd1ef-fefa-4976-9ae3-cee0ebad72bc", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "ab9e086c-2a89-4d2d-9a48-1bd669a3d13a", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+      };
+      setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.stellar.min.js"></script>
