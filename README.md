@@ -1,1 +1,1 @@
-gor demo https://iampukhraj.github.io/newport/
+Get demo https://iampukhraj.github.io/newport/
